@@ -1,0 +1,10 @@
+Pattern,Section,Status,Meaning for the model
+Home-country share of starts differs by league and club,1.1-1.3,Descriptive,Possible pre-match feature: % of home-country starters in today's XI (known at lineup time). Not in the current model.
+Home-country share vs points per match,1.4,Descriptive,Spearman rho = -0.16 overall; check within leagues before using it as a feature.
+Players move a lot between clubs and leagues,"2.1, 2.4",Handled,"The model uses each match's real XI and each player's latest value, so moves are reflected automatically."
+Money flows towards the richest leagues,2.2-2.3,Descriptive,"Explains why market values differ by league, which is why strength is ranked within league."
+Goals and home advantage change over seasons (COVID dip),3.1-3.2,Handled,Chronological train / validation / test split; R script 04 tests time dependence.
+Stronger XI wins most decided matches,3.3,Used,This is the main signal of the model (xi_strength_diff).
+"Cards differ by league, season and position",4.1-4.2,Descriptive,"Possible pre-match feature: a team's cards in its PREVIOUS matches (discipline, suspensions). Never the same match."
+Goals and cards rise towards the end of each half,4.3,Simulator,Goal-timing distribution can drive a minute-by-minute match simulation in the web app.
+Red card strongly changes the result,4.4,Not usable,Happens during the match: leakage if used for prediction.

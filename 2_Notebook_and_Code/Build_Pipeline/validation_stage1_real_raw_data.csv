@@ -1,0 +1,24 @@
+column,comparison,share_agreeing
+date,exact,1.0
+league_code,exact,1.0
+home_team_id,exact,1.0
+away_team_id,exact,1.0
+audit_home_goals,exact,1.0
+audit_away_goals,exact,1.0
+target_result,exact,1.0
+home_starter_count,exact,0.9999615073713384
+away_starter_count,exact,1.0
+home_strength_known_n,exact,0.9999615073713384
+away_strength_known_n,exact,1.0
+home_form_n_L5,exact,1.0
+away_form_n_L5,exact,1.0
+home_formation,exact,1.0
+away_formation,exact,1.0
+player_feature_ready,exact,0.9999615073713384
+home_points_per_game_L5,within 0.001,1.0
+away_win_rate_L5,within 0.001,1.0
+home_goal_diff_avg_L5,within 0.001,1.0
+home_lineup_continuity,within 0.001,1.0
+away_lineup_continuity,within 0.001,1.0
+home_strength_coverage,within 1.0,1.0
+home_strength_age_mean_days,within 1.0,0.9938796720428038

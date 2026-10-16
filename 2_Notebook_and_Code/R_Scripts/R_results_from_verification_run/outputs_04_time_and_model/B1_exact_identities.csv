@@ -1,0 +1,5 @@
+identity,max_abs_error
+home_goal_diff_avg_L5 = home_goals_for_avg_L5 - home_goals_against_avg_L5,1.0000000000021103e-4
+xi_strength_diff = home_xi_strength - away_xi_strength,1.0000000001753051e-4
+home_attack_vs_away_defence = home_attack_strength - away_defence_strength,1.0000000001753051e-4
+home_top3_gap = home_top3_strength - home_xi_strength,1.000000000139778e-4

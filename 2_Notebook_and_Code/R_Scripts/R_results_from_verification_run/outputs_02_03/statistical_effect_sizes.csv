@@ -1,0 +1,10 @@
+analysis,effect_size_type,effect_size
+XI Strength Difference vs Outcome,Kruskal-Wallis epsilon squared,0.14458532138282826
+PPG Difference vs Outcome,Kruskal-Wallis epsilon squared,0.06305563482645983
+Win Rate Difference vs Outcome,Kruskal-Wallis epsilon squared,0.05732464755247576
+Form Goal Difference vs Outcome,Kruskal-Wallis epsilon squared,0.07516737224422299
+Home Attack vs Away Defence vs Outcome,Kruskal-Wallis epsilon squared,0.11333268029751233
+Midfield Strength Difference vs Outcome,Kruskal-Wallis epsilon squared,0.126835703693327
+Goalkeeper Strength Difference vs Outcome,Kruskal-Wallis epsilon squared,0.05834384102329804
+Lineup Continuity Difference vs Outcome,Kruskal-Wallis epsilon squared,2.9977907129685365e-5
+League vs Outcome,Cramer's V,0.026361053964660208

@@ -1,0 +1,6 @@
+feature_group,missing_pct_primary,reason
+Recent form (L5),2.82,team's first match of a season: the 5-match window restarts each season
+Lineup continuity,7.44,needs the previous same-season match with a complete XI of 11
+XI strength,1.81,fewer than 8 starters with a rating or value before the match
+Goalkeeper strength,2.14,"goalkeeper has no rating or value, or fewer than 30 earlier goalkeepers in that league"
+Formation,1.32,formation not recorded in the source

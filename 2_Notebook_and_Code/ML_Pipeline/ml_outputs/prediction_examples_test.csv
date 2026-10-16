@@ -1,0 +1,6 @@
+match_uid,date,home_team,away_team,actual_result,predicted_result,P(Home),P(Draw),P(Away),max_p,Example,league_code,audit_home_goals,audit_away_goals
+TM_4648775,2025-12-29,FC Porto,Avs Futebol,H,H,0.8039287798719268,0.1372928948413531,0.0587783252867209,0.8039287798719268,Most confident home-win prediction,PO1,2,0
+TM_4396681,2024-11-30,Sporting CP,CD Santa Clara,A,H,0.7753975445245734,0.1585444295588516,0.0660580259165755,0.7753975445245734,Confident home-win prediction that was wrong,PO1,0,1
+TM_4396818,2024-12-15,Avs Futebol,SL Benfica,D,A,0.072356074198067,0.1695262445503798,0.7581176812515567,0.7581176812515567,Most confident away-win prediction,PO1,1,1
+TM_4626011,2026-01-17,Leeds United,Fulham FC,H,D,0.3036909619278884,0.3958091814056341,0.3004998566664912,0.3958091814056341,Highest draw probability,GB1,1,0
+TM_4626111,2026-04-12,Chelsea FC,Manchester City,A,A,0.3279095288119702,0.3353276137224658,0.3367628574655649,0.3367628574655649,Closest to a three-way tie,GB1,0,3

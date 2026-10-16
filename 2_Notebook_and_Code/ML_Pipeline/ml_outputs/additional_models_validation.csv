@@ -1,0 +1,13 @@
+Model,Family,Macro-F1,Accuracy,Draw F1,Log Loss,Fit time (s),Best params,Note,Gap to frozen RF
+HistGradientBoosting (balanced),Boosted trees,0.4950635567543653,0.5117773019271948,0.32663642255346725,0.980624573159846,41.1,"{'learning_rate': 0.05, 'max_depth': 3}",Native missing values; tuned,4.852746549616205e-05
+"Random Forest (frozen configuration, reference)",Bagged trees,0.49501502928886915,0.5092790863668808,0.33885350318471336,0.9833284902689521,6.4,-,Final model,0.0
+"RBF SVM (balanced, 42,795 training rows)",Maximum margin,0.493857556836458,0.5117773019271948,0.3291307232913072,,195.3,-,No probabilities,-0.0011574724524111568
+XGBoost (balanced),Boosted trees,0.493301776018394,0.5114204139900071,0.3219448094612352,0.9799059629440308,16.3,{'max_depth': 3},Native missing values; tuned,-0.001713253270475168
+"RBF SVM (balanced, 10,000 training rows)",Maximum margin,0.4869067184976818,0.5039257673090649,0.32047089601046436,,9.6,-,No probabilities,-0.008108310791187345
+MLP neural network (balanced),Neural network,0.4845170126823641,0.5064239828693791,0.30513176144244103,0.9796229078033557,17.4,"{'alpha': 0.01, 'hidden_layer_sizes': (64, 32)}",Tuned with TimeSeriesSplit,-0.010498016606505067
+"Logistic Regression (balanced, reference)",Linear,0.48349576164406033,0.5228408279800143,0.26517571884984026,0.9835808572966506,4.0,-,Section 11 configuration,-0.011519267644808817
+"RBF SVM (balanced, 5,000 training rows)",Maximum margin,0.47702969547918234,0.49107780157030695,0.32087628865979384,,2.6,-,No probabilities,-0.01798533380968681
+Ordinal logistic regression (prior-corrected decision),Ordinal linear,0.4750756418439804,0.5032119914346895,0.27111426543647976,0.967098931907604,61.2,-,Same probabilities; decision balanced by class share,-0.019939387444888768
+MLP neural network (unweighted),Neural network,0.4135609919997094,0.533547466095646,0.040973111395646605,0.964736670887671,2.0,-,"No weighting, for comparison",-0.08145403728915973
+"Linear SVM (balanced, calibrated)",Maximum margin,0.40261132222547014,0.5389007851534618,0.0,0.9700640552400792,5.2,-,Probabilities from calibration,-0.09240370706339901
+Ordinal logistic regression (most probable class),Ordinal linear,0.4017289051681239,0.5374732334047109,0.0,0.967098931907604,61.2,-,Proportional-odds model,-0.09328612412074527

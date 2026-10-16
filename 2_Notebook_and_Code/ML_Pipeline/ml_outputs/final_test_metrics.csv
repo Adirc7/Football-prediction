@@ -1,0 +1,18 @@
+,split,value
+Accuracy,test (season_start >= 2024),0.48857958600999285
+Balanced Accuracy,test (season_start >= 2024),0.47353811746134733
+Macro-F1,test (season_start >= 2024),0.47276386841083057
+Weighted-F1,test (season_start >= 2024),0.49391994529068706
+Log Loss,test (season_start >= 2024),1.0084664945818762
+Brier Score,test (season_start >= 2024),0.6027971168201459
+Home Precision,test (season_start >= 2024),0.6240494296577946
+Home Recall,test (season_start >= 2024),0.5403292181069959
+Home F1,test (season_start >= 2024),0.5791795324217027
+Draw Precision,test (season_start >= 2024),0.30604764813683566
+Draw Recall,test (season_start >= 2024),0.3498603351955307
+Draw F1,test (season_start >= 2024),0.32649071358748777
+Away Precision,test (season_start >= 2024),0.49597423510466987
+Away Recall,test (season_start >= 2024),0.5304247990815155
+Away F1,test (season_start >= 2024),0.512621359223301
+Macro-F1 95% bootstrap CI low,test (season_start >= 2024),0.4596800547922621
+Macro-F1 95% bootstrap CI high,test (season_start >= 2024),0.4855148652037042

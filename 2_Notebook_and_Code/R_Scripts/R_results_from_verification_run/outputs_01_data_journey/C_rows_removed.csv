@@ -1,0 +1,5 @@
+league_code,league_name,data_source,matches_removed
+C1,Switzerland Super League,european_soccer_sqlite_stage1,1422
+C1,super-league,transfermarkt_stage2,430
+PL1,Poland Ekstraklasa,european_soccer_sqlite_stage1,1920
+PL1,pko-bp-ekstraklasa,transfermarkt_stage2,612

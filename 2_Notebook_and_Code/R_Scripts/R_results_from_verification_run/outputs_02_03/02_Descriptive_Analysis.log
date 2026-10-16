@@ -1,0 +1,649 @@
+-- Attaching core tidyverse packages ------------------------ tidyverse 2.0.0 --
+v dplyr     1.1.4     v readr     2.1.5
+v forcats   1.0.0     v stringr   1.5.1
+v ggplot2   3.4.4     v tibble    3.2.1
+v lubridate 1.9.3     v tidyr     1.3.1
+v purrr     1.0.2     
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+i Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+corrplot 0.92 loaded
+All matches     : 51201 
+Training matches: 42795 
+
+==============================
+DATASET BASIC INFORMATION
+==============================
+Number of rows: 51201 
+Number of columns: 62 
+Date range: 2008-08-09 to 2026-05-24 
+Number of leagues: 9 
+Number of seasons: 18 
+Rows: 51,201
+Columns: 62
+$ match_uid                   <chr> "S1_483129", "S1_483130", "S1_483131", "S1~
+$ data_source                 <fct> european_soccer_sqlite_stage1, european_so~
+$ strength_method             <chr> "fifa_overall_rating_causal_prior_league_r~
+$ game_id                     <dbl> 483129, 483130, 483131, 483132, 483134, 48~
+$ date                        <date> 2008-08-09, 2008-08-09, 2008-08-09, 2008-~
+$ season_start                <int> 2008, 2008, 2008, 2008, 2008, 2008, 2008, ~
+$ season                      <chr> "2008/2009", "2008/2009", "2008/2009", "20~
+$ league_code                 <fct> FR1, FR1, FR1, FR1, FR1, FR1, FR1, FR1, FR~
+$ league_name                 <chr> "France Ligue 1", "France Ligue 1", "Franc~
+$ country                     <chr> "France", "France", "France", "France", "F~
+$ league_coverage_flag        <chr> "full_2008_2015", "full_2008_2015", "full_~
+$ home_team_id                <dbl> 8583, 9827, 9746, 8682, 9829, 8481, 9851, ~
+$ away_team_id                <dbl> 9830, 7819, 9831, 8689, 9847, 8639, 8592, ~
+$ home_team                   <chr> "AJ Auxerre", "Girondins de Bordeaux", "Le~
+$ away_team                   <chr> "FC Nantes", "SM Caen", "OGC Nice", "FC Lo~
+$ home_formation              <chr> "4-4-2", "4-4-2", "4-4-2", "4-5-1", "4-4-2~
+$ away_formation              <chr> "4-4-2", "4-4-2", "4-5-1", "4-4-2", "4-4-2~
+$ home_form_n_L5              <dbl> 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ~
+$ away_form_n_L5              <dbl> 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ~
+$ home_points_per_game_L5     <dbl> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA~
+$ away_points_per_game_L5     <dbl> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA~
+$ home_win_rate_L5            <dbl> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA~
+$ away_win_rate_L5            <dbl> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA~
+$ home_goals_for_avg_L5       <dbl> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA~
+$ away_goals_for_avg_L5       <dbl> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA~
+$ home_goals_against_avg_L5   <dbl> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA~
+$ away_goals_against_avg_L5   <dbl> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA~
+$ home_goal_diff_avg_L5       <dbl> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA~
+$ away_goal_diff_avg_L5       <dbl> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA~
+$ home_starter_count          <dbl> 11, 11, 11, 9, 11, 11, 11, 11, 11, 10, 11,~
+$ away_starter_count          <dbl> 10, 11, 11, 11, 11, 11, 10, 11, 11, 11, 11~
+$ home_strength_known_n       <dbl> 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10,~
+$ away_strength_known_n       <dbl> 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10,~
+$ home_strength_coverage      <dbl> 0.0000, 0.0000, 0.0000, 0.0000, 0.0000, 0.~
+$ away_strength_coverage      <dbl> 0.0000, 0.0000, 0.0000, 0.0000, 0.0000, 0.~
+$ home_strength_age_mean_days <dbl> 313.0000, 345.0000, 363.3636, 367.4444, 33~
+$ away_strength_age_mean_days <dbl> 346.3000, 362.1818, 313.0000, 345.0000, 31~
+$ home_xi_strength            <dbl> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA~
+$ away_xi_strength            <dbl> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA~
+$ home_attack_strength        <dbl> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA~
+$ away_attack_strength        <dbl> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA~
+$ home_midfield_strength      <dbl> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA~
+$ away_midfield_strength      <dbl> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA~
+$ home_defence_strength       <dbl> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA~
+$ away_defence_strength       <dbl> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA~
+$ home_gk_strength            <dbl> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA~
+$ away_gk_strength            <dbl> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA~
+$ home_top3_strength          <dbl> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA~
+$ away_top3_strength          <dbl> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA~
+$ home_top3_gap               <dbl> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA~
+$ away_top3_gap               <dbl> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA~
+$ home_lineup_continuity      <dbl> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA~
+$ away_lineup_continuity      <dbl> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA~
+$ xi_strength_diff            <dbl> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA~
+$ home_attack_vs_away_defence <dbl> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA~
+$ away_attack_vs_home_defence <dbl> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA~
+$ midfield_strength_diff      <dbl> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA~
+$ gk_strength_diff            <dbl> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA~
+$ player_feature_ready        <dbl> 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, ~
+$ audit_home_goals            <dbl> 2, 2, 1, 0, 1, 0, 4, 1, 1, 0, 3, 1, 0, 3, ~
+$ audit_away_goals            <dbl> 1, 1, 0, 1, 0, 0, 4, 2, 0, 1, 2, 0, 2, 0, ~
+$ target_result               <fct> H, H, H, A, H, D, D, A, H, A, H, H, A, H, ~
+ [1] "match_uid"                   "data_source"                
+ [3] "strength_method"             "game_id"                    
+ [5] "date"                        "season_start"               
+ [7] "season"                      "league_code"                
+ [9] "league_name"                 "country"                    
+[11] "league_coverage_flag"        "home_team_id"               
+[13] "away_team_id"                "home_team"                  
+[15] "away_team"                   "home_formation"             
+[17] "away_formation"              "home_form_n_L5"             
+[19] "away_form_n_L5"              "home_points_per_game_L5"    
+[21] "away_points_per_game_L5"     "home_win_rate_L5"           
+[23] "away_win_rate_L5"            "home_goals_for_avg_L5"      
+[25] "away_goals_for_avg_L5"       "home_goals_against_avg_L5"  
+[27] "away_goals_against_avg_L5"   "home_goal_diff_avg_L5"      
+[29] "away_goal_diff_avg_L5"       "home_starter_count"         
+[31] "away_starter_count"          "home_strength_known_n"      
+[33] "away_strength_known_n"       "home_strength_coverage"     
+[35] "away_strength_coverage"      "home_strength_age_mean_days"
+[37] "away_strength_age_mean_days" "home_xi_strength"           
+[39] "away_xi_strength"            "home_attack_strength"       
+[41] "away_attack_strength"        "home_midfield_strength"     
+[43] "away_midfield_strength"      "home_defence_strength"      
+[45] "away_defence_strength"       "home_gk_strength"           
+[47] "away_gk_strength"            "home_top3_strength"         
+[49] "away_top3_strength"          "home_top3_gap"              
+[51] "away_top3_gap"               "home_lineup_continuity"     
+[53] "away_lineup_continuity"      "xi_strength_diff"           
+[55] "home_attack_vs_away_defence" "away_attack_vs_home_defence"
+[57] "midfield_strength_diff"      "gk_strength_diff"           
+[59] "player_feature_ready"        "audit_home_goals"           
+[61] "audit_away_goals"            "target_result"              
+# A tibble: 6 x 62
+  match_uid data_source   strength_method game_id date       season_start season
+  <chr>     <fct>         <chr>             <dbl> <date>            <int> <chr> 
+1 S1_483129 european_soc~ fifa_overall_r~  483129 2008-08-09         2008 2008/~
+2 S1_483130 european_soc~ fifa_overall_r~  483130 2008-08-09         2008 2008/~
+3 S1_483131 european_soc~ fifa_overall_r~  483131 2008-08-09         2008 2008/~
+4 S1_483132 european_soc~ fifa_overall_r~  483132 2008-08-09         2008 2008/~
+5 S1_483134 european_soc~ fifa_overall_r~  483134 2008-08-09         2008 2008/~
+6 S1_483135 european_soc~ fifa_overall_r~  483135 2008-08-09         2008 2008/~
+# i 55 more variables: league_code <fct>, league_name <chr>, country <chr>,
+#   league_coverage_flag <chr>, home_team_id <dbl>, away_team_id <dbl>,
+#   home_team <chr>, away_team <chr>, home_formation <chr>,
+#   away_formation <chr>, home_form_n_L5 <dbl>, away_form_n_L5 <dbl>,
+#   home_points_per_game_L5 <dbl>, away_points_per_game_L5 <dbl>,
+#   home_win_rate_L5 <dbl>, away_win_rate_L5 <dbl>,
+#   home_goals_for_avg_L5 <dbl>, away_goals_for_avg_L5 <dbl>, ...
+
+Duplicate match_uid: 0 
+Duplicate game_id: 0 
+
+Target mismatches: 0 
+# A tibble: 3 x 3
+  target_result     n percentage
+  <fct>         <int>      <dbl>
+1 H             23020       45.0
+2 D             12773       24.9
+3 A             15408       30.1
+# A tibble: 9 x 3
+  league_code     n percentage
+  <fct>       <int>      <dbl>
+1 ES1          6840      13.4 
+2 GB1          6840      13.4 
+3 IT1          6817      13.3 
+4 FR1          6517      12.7 
+5 L1           5508      10.8 
+6 NL1          5434      10.6 
+7 PO1          5112       9.98
+8 BE1          4318       8.43
+9 SC1          3815       7.45
+# A tibble: 2 x 3
+  data_source                       n percentage
+  <fct>                         <int>      <dbl>
+1 european_soccer_sqlite_stage1 22637       44.2
+2 transfermarkt_stage2          28564       55.8
+# A tibble: 18 x 2
+   season_start     n
+          <int> <int>
+ 1         2008  2906
+ 2         2009  2810
+ 3         2010  2840
+ 4         2011  2818
+ 5         2012  2840
+ 6         2013  2612
+ 7         2014  2905
+ 8         2015  2906
+ 9         2016  2906
+10         2017  2876
+11         2018  2876
+12         2019  2674
+13         2020  2942
+14         2021  2942
+15         2022  2942
+16         2023  2802
+17         2024  2802
+18         2025  2802
+# A tibble: 54 x 4
+   season_start target_result     n percentage
+          <int> <fct>         <int>      <dbl>
+ 1         2008 H              1360       46.8
+ 2         2008 D               727       25.0
+ 3         2008 A               819       28.2
+ 4         2009 H              1325       47.2
+ 5         2009 D               720       25.6
+ 6         2009 A               765       27.2
+ 7         2010 H              1324       46.6
+ 8         2010 D               728       25.6
+ 9         2010 A               788       27.7
+10         2011 H              1321       46.9
+# i 44 more rows
+# A tibble: 63 x 3
+   variable                    missing_count missing_percentage
+   <chr>                               <int>              <dbl>
+ 1 home_lineup_continuity               3811               7.44
+ 2 away_lineup_continuity               3805               7.43
+ 3 away_points_per_game_L5              1448               2.83
+ 4 away_win_rate_L5                     1448               2.83
+ 5 away_goals_for_avg_L5                1448               2.83
+ 6 away_goals_against_avg_L5            1448               2.83
+ 7 away_goal_diff_avg_L5                1448               2.83
+ 8 home_points_per_game_L5              1445               2.82
+ 9 home_win_rate_L5                     1445               2.82
+10 home_goals_for_avg_L5                1445               2.82
+11 home_goals_against_avg_L5            1445               2.82
+12 home_goal_diff_avg_L5                1445               2.82
+13 gk_strength_diff                     1384               2.70
+14 away_gk_strength                     1120               2.19
+15 xi_strength_diff                     1101               2.15
+16 home_gk_strength                     1094               2.14
+17 away_attack_vs_home_defence           944               1.84
+18 home_attack_vs_away_defence           943               1.84
+19 away_xi_strength                      930               1.82
+20 away_attack_strength                  930               1.82
+21 away_top3_gap                         930               1.82
+22 home_xi_strength                      929               1.81
+23 home_top3_gap                         929               1.81
+24 home_attack_strength                  925               1.81
+25 midfield_strength_diff                778               1.52
+26 away_midfield_strength                761               1.49
+27 home_midfield_strength                754               1.47
+28 away_defence_strength                 754               1.47
+29 away_top3_strength                    751               1.47
+30 home_top3_strength                    749               1.46
+31 home_defence_strength                 748               1.46
+32 away_formation                        681               1.33
+33 home_formation                        677               1.32
+34 away_strength_age_mean_days           673               1.31
+35 away_strength_coverage                662               1.29
+36 home_strength_coverage                659               1.29
+37 home_strength_age_mean_days           659               1.29
+38 match_uid                               0               0   
+39 data_source                             0               0   
+40 strength_method                         0               0   
+41 game_id                                 0               0   
+42 date                                    0               0   
+43 season_start                            0               0   
+44 season                                  0               0   
+45 league_code                             0               0   
+46 league_name                             0               0   
+47 country                                 0               0   
+48 league_coverage_flag                    0               0   
+49 home_team_id                            0               0   
+50 away_team_id                            0               0   
+51 home_team                               0               0   
+52 away_team                               0               0   
+53 home_form_n_L5                          0               0   
+54 away_form_n_L5                          0               0   
+55 home_starter_count                      0               0   
+56 away_starter_count                      0               0   
+57 home_strength_known_n                   0               0   
+58 away_strength_known_n                   0               0   
+59 player_feature_ready                    0               0   
+60 audit_home_goals                        0               0   
+61 audit_away_goals                        0               0   
+62 target_result                           0               0   
+63 target_check                            0               0   
+# A tibble: 2 x 3
+  player_feature_ready     n percentage
+                 <dbl> <int>      <dbl>
+1                    0  3339       6.52
+2                    1 47862      93.5 
+# A tibble: 18 x 3
+   season_start matches player_ready_percentage
+          <int>   <int>                   <dbl>
+ 1         2008    2906                    58.1
+ 2         2009    2810                    81.3
+ 3         2010    2840                    88.5
+ 4         2011    2818                    92.9
+ 5         2012    2840                    94.1
+ 6         2013    2612                    94.0
+ 7         2014    2905                    91.3
+ 8         2015    2906                    90.5
+ 9         2016    2906                    98.4
+10         2017    2876                    99.7
+11         2018    2876                    95.4
+12         2019    2674                    99.6
+13         2020    2942                    99.8
+14         2021    2942                    99.9
+15         2022    2942                    99.8
+16         2023    2802                   100  
+17         2024    2802                   100  
+18         2025    2802                    99.9
+# A tibble: 31 x 13
+   feature valid_n missing_n    mean median variance standard_deviation  minimum
+   <chr>     <int>     <int>   <dbl>  <dbl>    <dbl>              <dbl>    <dbl>
+ 1 away_a~   50271       930 53.5    52.5    6.41e+2             25.3     0     
+ 2 away_a~   50257       944 -1.69   -1.80   1.10e+3             33.2   -96.7   
+ 3 away_d~   50447       754 55.0    53.5    5.06e+2             22.5     1.99  
+ 4 away_g~   50081      1120 52.7    53.8    8.55e+2             29.2     0     
+ 5 away_g~   49753      1448  0.0427  0      1.12e+0              1.06   -6     
+ 6 away_g~   49753      1448  1.35    1.25   4.17e-1              0.646   0     
+ 7 away_g~   49753      1448  1.39    1.2    5.09e-1              0.714   0     
+ 8 away_l~   47396      3805  0.784   0.818  2.09e-2              0.145   0     
+ 9 away_m~   50440       761 54.3    52.3    5.40e+2             23.2     0.0904
+10 away_p~   49753      1448  1.40    1.4    5.29e-1              0.728   0     
+11 away_t~   50271       930 20.7    20.9    5.85e+1              7.65    0.294 
+12 away_t~   50450       751 74.8    76.9    3.32e+2             18.2     8.37  
+13 away_w~   49753      1448  0.384   0.4    7.07e-2              0.266   0     
+14 away_x~   50271       930 54.3    51.9    4.45e+2             21.1     3.84  
+15 gk_str~   49817      1384  0.0954  0      1.68e+3             41.0   -98.8   
+16 home_a~   50276       925 53.8    52.8    6.33e+2             25.2     0     
+17 home_a~   50258       943 -1.24   -1.24   1.10e+3             33.2   -95.9   
+18 home_d~   50453       748 55.2    53.7    5.03e+2             22.4     0.472 
+19 home_g~   50107      1094 52.8    53.9    8.49e+2             29.1     0     
+20 home_g~   49756      1445 -0.0418  0      1.11e+0              1.05   -8     
+21 home_g~   49756      1445  1.39    1.4    4.36e-1              0.660   0     
+22 home_g~   49756      1445  1.35    1.2    4.83e-1              0.695   0     
+23 home_l~   47390      3811  0.783   0.818  2.02e-2              0.142   0     
+24 home_m~   50447       754 54.7    52.8    5.39e+2             23.2     0.334 
+25 home_p~   49756      1445  1.35    1.4    5.25e-1              0.725   0     
+26 home_t~   50272       929 20.6    20.8    5.80e+1              7.62    0.313 
+27 home_t~   50452       749 75.0    77.2    3.28e+2             18.1     8.36  
+28 home_w~   49756      1445  0.365   0.4    6.90e-2              0.263   0     
+29 home_x~   50272       929 54.6    52.3    4.42e+2             21.0     3.80  
+30 midfie~   50423       778  0.423   0.478  1.06e+3             32.6   -95.7   
+31 xi_str~   50100      1101  0.293   0.197  8.58e+2             29.3   -86.9   
+# i 5 more variables: Q1 <dbl>, Q3 <dbl>, IQR <dbl>, maximum <dbl>,
+#   skewness <dbl>
+Warning message:
+Removed 929 rows containing non-finite values (`stat_bin()`). 
+Warning message:
+Removed 930 rows containing non-finite values (`stat_bin()`). 
+Warning message:
+Removed 1101 rows containing non-finite values (`stat_bin()`). 
+Warning message:
+Removed 1099 rows containing non-finite values (`stat_boxplot()`). 
+Warning message:
+Removed 1445 rows containing non-finite values (`stat_bin()`). 
+Warning message:
+Removed 3811 rows containing non-finite values (`stat_bin()`). 
+# A tibble: 15 x 2
+   home_formation      n
+   <chr>           <int>
+ 1 4-4-2            9165
+ 2 4-5-1            7177
+ 3 4-2-3-1          7169
+ 4 4-3-3            5347
+ 5 4-3-3 Attacking  4863
+ 6 4-4-2 double 6   2513
+ 7 4-3-3 Defending  1993
+ 8 3-4-2-1          1874
+ 9 3-4-3            1801
+10 3-5-2 flat       1723
+11 3-5-2            1295
+12 4-1-4-1          1207
+13 3-4-1-2          1005
+14 5-3-2             903
+15 5-4-1             607
+# A tibble: 2 x 6
+  data_source                   matches mean_home_xi sd_home_xi mean_away_xi
+  <fct>                           <int>        <dbl>      <dbl>        <dbl>
+1 european_soccer_sqlite_stage1   22637         50.9       20.4         50.6
+2 transfermarkt_stage2            28564         57.4       21.1         57.1
+# i 1 more variable: player_ready_percentage <dbl>
+                            home_points_per_game_L5 away_points_per_game_L5
+home_points_per_game_L5                       1.000                   0.025
+away_points_per_game_L5                       0.025                   1.000
+home_goal_diff_avg_L5                         0.885                   0.028
+away_goal_diff_avg_L5                         0.028                   0.885
+home_xi_strength                              0.490                   0.010
+away_xi_strength                              0.014                   0.493
+home_top3_strength                            0.433                   0.008
+away_top3_strength                            0.013                   0.439
+home_attack_strength                          0.425                   0.016
+away_attack_strength                          0.017                   0.423
+home_midfield_strength                        0.460                   0.007
+away_midfield_strength                        0.011                   0.465
+home_defence_strength                         0.448                   0.009
+away_defence_strength                         0.014                   0.453
+home_gk_strength                              0.319                   0.007
+away_gk_strength                              0.006                   0.320
+xi_strength_diff                              0.342                  -0.348
+home_attack_vs_away_defence                   0.313                  -0.295
+away_attack_vs_home_defence                  -0.290                   0.316
+midfield_strength_diff                        0.319                  -0.326
+gk_strength_diff                              0.223                  -0.224
+                            home_goal_diff_avg_L5 away_goal_diff_avg_L5
+home_points_per_game_L5                     0.885                 0.028
+away_points_per_game_L5                     0.028                 0.885
+home_goal_diff_avg_L5                       1.000                 0.032
+away_goal_diff_avg_L5                       0.032                 1.000
+home_xi_strength                            0.529                 0.011
+away_xi_strength                            0.019                 0.534
+home_top3_strength                          0.469                 0.007
+away_top3_strength                          0.016                 0.475
+home_attack_strength                        0.460                 0.015
+away_attack_strength                        0.020                 0.460
+home_midfield_strength                      0.497                 0.006
+away_midfield_strength                      0.015                 0.503
+home_defence_strength                       0.484                 0.011
+away_defence_strength                       0.017                 0.490
+home_gk_strength                            0.346                 0.009
+away_gk_strength                            0.014                 0.347
+xi_strength_diff                            0.367                -0.377
+home_attack_vs_away_defence                 0.338                -0.321
+away_attack_vs_home_defence                -0.311                 0.343
+midfield_strength_diff                      0.343                -0.354
+gk_strength_diff                            0.236                -0.241
+                            home_xi_strength away_xi_strength
+home_points_per_game_L5                0.490            0.014
+away_points_per_game_L5                0.010            0.493
+home_goal_diff_avg_L5                  0.529            0.019
+away_goal_diff_avg_L5                  0.011            0.534
+home_xi_strength                       1.000            0.029
+away_xi_strength                       0.029            1.000
+home_top3_strength                     0.936            0.032
+away_top3_strength                     0.032            0.936
+home_attack_strength                   0.855            0.033
+away_attack_strength                   0.032            0.853
+home_midfield_strength                 0.928            0.020
+away_midfield_strength                 0.017            0.928
+home_defence_strength                  0.929            0.032
+away_defence_strength                  0.033            0.928
+home_gk_strength                       0.678            0.020
+away_gk_strength                       0.022            0.678
+xi_strength_diff                       0.696           -0.698
+home_attack_vs_away_defence            0.626           -0.604
+away_attack_vs_home_defence           -0.601            0.627
+midfield_strength_diff                 0.646           -0.645
+gk_strength_diff                       0.466           -0.470
+                            home_top3_strength away_top3_strength
+home_points_per_game_L5                  0.433              0.013
+away_points_per_game_L5                  0.008              0.439
+home_goal_diff_avg_L5                    0.469              0.016
+away_goal_diff_avg_L5                    0.007              0.475
+home_xi_strength                         0.936              0.032
+away_xi_strength                         0.032              0.936
+home_top3_strength                       1.000              0.039
+away_top3_strength                       0.039              1.000
+home_attack_strength                     0.799              0.038
+away_attack_strength                     0.036              0.795
+home_midfield_strength                   0.867              0.023
+away_midfield_strength                   0.020              0.865
+home_defence_strength                    0.871              0.034
+away_defence_strength                    0.036              0.871
+home_gk_strength                         0.636              0.023
+away_gk_strength                         0.023              0.636
+xi_strength_diff                         0.648             -0.650
+home_attack_vs_away_defence              0.582             -0.562
+away_attack_vs_home_defence             -0.559              0.582
+midfield_strength_diff                   0.601             -0.600
+gk_strength_diff                         0.435             -0.438
+                            home_attack_strength away_attack_strength
+home_points_per_game_L5                    0.425                0.017
+away_points_per_game_L5                    0.016                0.423
+home_goal_diff_avg_L5                      0.460                0.020
+away_goal_diff_avg_L5                      0.015                0.460
+home_xi_strength                           0.855                0.032
+away_xi_strength                           0.033                0.853
+home_top3_strength                         0.799                0.036
+away_top3_strength                         0.038                0.795
+home_attack_strength                       1.000                0.038
+away_attack_strength                       0.038                1.000
+home_midfield_strength                     0.737                0.023
+away_midfield_strength                     0.022                0.735
+home_defence_strength                      0.730                0.031
+away_defence_strength                      0.034                0.728
+home_gk_strength                           0.518                0.024
+away_gk_strength                           0.024                0.516
+xi_strength_diff                           0.589               -0.591
+home_attack_vs_away_defence                0.735               -0.464
+away_attack_vs_home_defence               -0.463                0.739
+midfield_strength_diff                     0.507               -0.506
+gk_strength_diff                           0.351               -0.352
+                            home_midfield_strength away_midfield_strength
+home_points_per_game_L5                      0.460                  0.011
+away_points_per_game_L5                      0.007                  0.465
+home_goal_diff_avg_L5                        0.497                  0.015
+away_goal_diff_avg_L5                        0.006                  0.503
+home_xi_strength                             0.928                  0.017
+away_xi_strength                             0.020                  0.928
+home_top3_strength                           0.867                  0.020
+away_top3_strength                           0.023                  0.865
+home_attack_strength                         0.737                  0.022
+away_attack_strength                         0.023                  0.735
+home_midfield_strength                       1.000                  0.009
+away_midfield_strength                       0.009                  1.000
+home_defence_strength                        0.793                  0.020
+away_defence_strength                        0.024                  0.793
+home_gk_strength                             0.555                  0.011
+away_gk_strength                             0.019                  0.555
+xi_strength_diff                             0.651                 -0.655
+home_attack_vs_away_defence                  0.543                 -0.521
+away_attack_vs_home_defence                 -0.516                  0.546
+midfield_strength_diff                       0.703                 -0.704
+gk_strength_diff                             0.381                 -0.389
+                            home_defence_strength away_defence_strength
+home_points_per_game_L5                     0.448                 0.014
+away_points_per_game_L5                     0.009                 0.453
+home_goal_diff_avg_L5                       0.484                 0.017
+away_goal_diff_avg_L5                       0.011                 0.490
+home_xi_strength                            0.929                 0.033
+away_xi_strength                            0.032                 0.928
+home_top3_strength                          0.871                 0.036
+away_top3_strength                          0.034                 0.871
+home_attack_strength                        0.730                 0.034
+away_attack_strength                        0.031                 0.728
+home_midfield_strength                      0.793                 0.024
+away_midfield_strength                      0.020                 0.793
+home_defence_strength                       1.000                 0.039
+away_defence_strength                       0.039                 1.000
+home_gk_strength                            0.562                 0.021
+away_gk_strength                            0.021                 0.562
+xi_strength_diff                            0.643                -0.643
+home_attack_vs_away_defence                 0.528                -0.652
+away_attack_vs_home_defence                -0.650                 0.527
+midfield_strength_diff                      0.549                -0.547
+gk_strength_diff                            0.384                -0.387
+                            home_gk_strength away_gk_strength xi_strength_diff
+home_points_per_game_L5                0.319            0.006            0.342
+away_points_per_game_L5                0.007            0.320           -0.348
+home_goal_diff_avg_L5                  0.346            0.014            0.367
+away_goal_diff_avg_L5                  0.009            0.347           -0.377
+home_xi_strength                       0.678            0.022            0.696
+away_xi_strength                       0.020            0.678           -0.698
+home_top3_strength                     0.636            0.023            0.648
+away_top3_strength                     0.023            0.636           -0.650
+home_attack_strength                   0.518            0.024            0.589
+away_attack_strength                   0.024            0.516           -0.591
+home_midfield_strength                 0.555            0.019            0.651
+away_midfield_strength                 0.011            0.555           -0.655
+home_defence_strength                  0.562            0.021            0.643
+away_defence_strength                  0.021            0.562           -0.643
+home_gk_strength                       1.000            0.013            0.472
+away_gk_strength                       0.013            1.000           -0.472
+xi_strength_diff                       0.472           -0.472            1.000
+home_attack_vs_away_defence            0.379           -0.363            0.883
+away_attack_vs_home_defence           -0.361            0.378           -0.882
+midfield_strength_diff                 0.386           -0.381            0.927
+gk_strength_diff                       0.701           -0.704            0.672
+                            home_attack_vs_away_defence
+home_points_per_game_L5                           0.313
+away_points_per_game_L5                          -0.295
+home_goal_diff_avg_L5                             0.338
+away_goal_diff_avg_L5                            -0.321
+home_xi_strength                                  0.626
+away_xi_strength                                 -0.604
+home_top3_strength                                0.582
+away_top3_strength                               -0.562
+home_attack_strength                              0.735
+away_attack_strength                             -0.464
+home_midfield_strength                            0.543
+away_midfield_strength                           -0.521
+home_defence_strength                             0.528
+away_defence_strength                            -0.652
+home_gk_strength                                  0.379
+away_gk_strength                                 -0.363
+xi_strength_diff                                  0.883
+home_attack_vs_away_defence                       1.000
+away_attack_vs_home_defence                      -0.709
+midfield_strength_diff                            0.756
+gk_strength_diff                                  0.528
+                            away_attack_vs_home_defence midfield_strength_diff
+home_points_per_game_L5                          -0.290                  0.319
+away_points_per_game_L5                           0.316                 -0.326
+home_goal_diff_avg_L5                            -0.311                  0.343
+away_goal_diff_avg_L5                             0.343                 -0.354
+home_xi_strength                                 -0.601                  0.646
+away_xi_strength                                  0.627                 -0.645
+home_top3_strength                               -0.559                  0.601
+away_top3_strength                                0.582                 -0.600
+home_attack_strength                             -0.463                  0.507
+away_attack_strength                              0.739                 -0.506
+home_midfield_strength                           -0.516                  0.703
+away_midfield_strength                            0.546                 -0.704
+home_defence_strength                            -0.650                  0.549
+away_defence_strength                             0.527                 -0.547
+home_gk_strength                                 -0.361                  0.386
+away_gk_strength                                  0.378                 -0.381
+xi_strength_diff                                 -0.882                  0.927
+home_attack_vs_away_defence                      -0.709                  0.756
+away_attack_vs_home_defence                       1.000                 -0.754
+midfield_strength_diff                           -0.754                  1.000
+gk_strength_diff                                 -0.527                  0.547
+                            gk_strength_diff
+home_points_per_game_L5                0.223
+away_points_per_game_L5               -0.224
+home_goal_diff_avg_L5                  0.236
+away_goal_diff_avg_L5                 -0.241
+home_xi_strength                       0.466
+away_xi_strength                      -0.470
+home_top3_strength                     0.435
+away_top3_strength                    -0.438
+home_attack_strength                   0.351
+away_attack_strength                  -0.352
+home_midfield_strength                 0.381
+away_midfield_strength                -0.389
+home_defence_strength                  0.384
+away_defence_strength                 -0.387
+home_gk_strength                       0.701
+away_gk_strength                      -0.704
+xi_strength_diff                       0.672
+home_attack_vs_away_defence            0.528
+away_attack_vs_home_defence           -0.527
+midfield_strength_diff                 0.547
+gk_strength_diff                       1.000
+# A tibble: 17 x 4
+   feature_1                   feature_2               correlation pair         
+   <fct>                       <fct>                         <dbl> <chr>        
+ 1 home_top3_strength          home_xi_strength              0.936 home_top3_st~
+ 2 away_top3_strength          away_xi_strength              0.936 away_top3_st~
+ 3 home_defence_strength       home_xi_strength              0.929 home_defence~
+ 4 away_defence_strength       away_xi_strength              0.928 away_defence~
+ 5 away_midfield_strength      away_xi_strength              0.928 away_midfiel~
+ 6 home_midfield_strength      home_xi_strength              0.928 home_midfiel~
+ 7 midfield_strength_diff      xi_strength_diff              0.927 midfield_str~
+ 8 away_goal_diff_avg_L5       away_points_per_game_L5       0.885 away_goal_di~
+ 9 home_goal_diff_avg_L5       home_points_per_game_L5       0.885 home_goal_di~
+10 home_attack_vs_away_defence xi_strength_diff              0.883 home_attack_~
+11 away_attack_vs_home_defence xi_strength_diff             -0.882 away_attack_~
+12 away_defence_strength       away_top3_strength            0.871 away_defence~
+13 home_defence_strength       home_top3_strength            0.871 home_defence~
+14 home_midfield_strength      home_top3_strength            0.867 home_midfiel~
+15 away_midfield_strength      away_top3_strength            0.865 away_midfiel~
+16 home_attack_strength        home_xi_strength              0.855 home_attack_~
+17 away_attack_strength        away_xi_strength              0.853 away_attack_~
+# A tibble: 30 x 4
+   strength_decile target_result     n percentage
+             <int> <fct>         <int>      <dbl>
+ 1               1 H               685       16.4
+ 2               1 D               883       21.2
+ 3               1 A              2602       62.4
+ 4               2 H              1052       25.2
+ 5               2 D              1077       25.8
+ 6               2 A              2041       48.9
+ 7               3 H              1450       34.8
+ 8               3 D              1106       26.5
+ 9               3 A              1614       38.7
+10               4 H              1609       38.6
+# i 20 more rows
+
+=====================================
+DESCRIPTIVE ANALYSIS COMPLETE
+=====================================
+Rows (all matches)    : 51201 
+Rows (training period): 42795 
+Columns (original file): 62 
+Duplicate matches     : 0 
+Target mismatches     : 0 
+
+Outcome-related plots and correlations (Steps 21, 22, 27, 28, 29)
+use the training period only.
+Check the generated CSV tables and RStudio plots.

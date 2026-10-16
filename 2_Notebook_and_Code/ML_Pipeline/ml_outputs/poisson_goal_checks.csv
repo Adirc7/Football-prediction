@@ -1,0 +1,24 @@
+Check,Value
+Training seasons: mean home goals,1.5500408926276434
+Training seasons: mean away goals,1.1989484752891693
+"Average match, Poisson P(home win)",0.45435654534382375
+"Average match, Poisson P(draw)",0.2510089302371118
+"Average match, Poisson P(away win)",0.29463452441906446
+Training seasons: actual home-win share,0.4528099076994976
+Training seasons: actual draw share,0.24787942516649142
+Training seasons: actual away-win share,0.299310667134011
+Training seasons: variance/mean of home goals (1 = exactly Poisson),1.1062138183802863
+Training seasons: variance/mean of away goals (1 = exactly Poisson),1.133059554491181
+Validation: mean predicted home goals,1.5780266788547848
+Validation: actual mean home goals,1.6017130620985012
+Validation: mean predicted away goals,1.2235907611888417
+Validation: actual mean away goals,1.2965738758029979
+Validation: home-goal deviance explained vs training mean (D2),0.12833401182388282
+Validation: away-goal deviance explained vs training mean (D2),0.12647201762357552
+Validation: mean predicted P(draw),0.23014215816935737
+Validation: actual draw share,0.261598857958601
+Validation: mean predicted P(0-0),0.06336579780649691
+Validation: actual 0-0 share,0.06138472519628837
+Validation: highest single P(draw) for any match,0.2920243046677822
+Validation: matches where draw is the most probable result (%),0.0
+Validation: most likely exact score correct (%),13.240542469664526

@@ -1,0 +1,20 @@
+source,table,used,role_in_project,rows
+Stage 1,Match,Yes,"matches, goals, starting XI player IDs and pitch coordinates",25979
+Stage 1,League,Yes,league names,11
+Stage 1,country,Yes,country names,11
+Stage 1,Team,Yes,club names,299
+Stage 1,Player Attributes,Yes,dated FIFA overall ratings,183978
+Stage 1,player,No,names and birth dates only,11060
+Stage 1,Team Attributes,No,team tactical ratings (not player-aware),1458
+Stage 2,games,Yes,"matches, goals, formations, clubs",88958
+Stage 2,competitions,Yes,league names,65
+Stage 2,game_lineups,Yes,starting XI and position text,3179016
+Stage 2,player_valuations,Yes,dated market values,656301
+Stage 2,appearances,No,in-match statistics (would leak the result),1894350
+Stage 2,game_events,No,"goals, cards, substitutions (would leak the result)",1274469
+Stage 2,club_games,No,duplicate view of games,177916
+Stage 2,players,No,"current player profile (not dated, so not causal)",50149
+Stage 2,transfers,No,not needed for the research questions,175165
+Stage 2,clubs,No,current club profile,796
+Stage 2,countries,No,not needed,124
+Stage 2,national_teams,No,not needed,124

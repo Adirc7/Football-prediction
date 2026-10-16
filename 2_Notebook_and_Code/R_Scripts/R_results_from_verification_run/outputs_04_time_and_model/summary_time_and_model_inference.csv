@@ -1,0 +1,10 @@
+part,question,test,statistic,df,p_value,effect_size,n,p_holm,p_value_txt,p_holm_txt,decision
+A Time,Do outcome shares differ between seasons?,Chi-square (season x outcome),98.3,28,9.529165330949789e-10,Cramer's V = 0.034,42795,6.670415731664852e-9,9.53e-10,6.67e-09,Reject H0 (significant)
+A Time,Do outcome shares differ between Stage 1 and Stage 2?,Chi-square (source x outcome),30.62,2,2.2463116856692373e-7,Cramer's V = 0.027,42795,1.1231558428346186e-6,2.25e-07,1.12e-06,Reject H0 (significant)
+A Time,Was the home-win share lower in the COVID season 2020/21?,Two-proportion test,32.56,1,1.1566490586802846e-8,40.2% vs 45.7% (difference -5.4 points),42795,6.939894352081708e-8,1.16e-08,6.94e-08,Reject H0 (significant)
+A Time,Is there a long-term trend in home wins (COVID season excluded)?,Logistic regression slope (Wald z),-2.83,1,0.004685334498567541,odds ratio per season = 0.9934,39853,0.014056003495702622,0.00469,0.0141,Reject H0 (significant)
+A Time,Does the XI-strength effect differ between Stage 1 and Stage 2?,LR test (xi x source interaction),1.66,2,0.4366470630750262,see A5_xi_effect_by_season.csv,41696,0.4366470630750262,0.437,0.437,Do not reject H0
+C Player info (RQ2),Does form improve on the previous model?,LR test M0 league vs M1 + form,3058.06,4,0,McFadden R2 0.0007 -> 0.0391,37347,0,< 2.2e-16,< 2.2e-16,Reject H0 (significant)
+C Player info (RQ2),Does XI quality improve on the previous model?,LR test M1 + form vs M2 + XI quality,3245.72,2,0,McFadden R2 0.0391 -> 0.0799,37347,0,< 2.2e-16,< 2.2e-16,Reject H0 (significant)
+C Player info (RQ2),Does positional improve on the previous model?,LR test M2 + XI quality vs M3 + positional,28.79,8,3.4446414061517494e-4,McFadden R2 0.0799 -> 0.0803,37347,0.0013778565624606998,0.000344,0.00138,Reject H0 (significant)
+C Player info (RQ2),Does continuity improve on the previous model?,LR test M3 + positional vs M4 + continuity,3.31,2,0.19101015232016516,McFadden R2 0.0803 -> 0.0803,37347,0.3820203046403303,0.191,0.382,Do not reject H0

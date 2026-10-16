@@ -1,0 +1,212 @@
+-- Attaching core tidyverse packages ------------------------ tidyverse 2.0.0 --
+v dplyr     1.1.4     v readr     2.1.5
+v forcats   1.0.0     v stringr   1.5.1
+v ggplot2   3.4.4     v tibble    3.2.1
+v lubridate 1.9.3     v tidyr     1.3.1
+v purrr     1.0.2     
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+i Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Loading required package: carData
+
+Attaching package: 'car'
+
+The following object is masked from 'package:dplyr':
+
+    recode
+
+The following object is masked from 'package:purrr':
+
+    some
+
+Training rows: 42795 
+# A tibble: 3 x 5
+  target_result     n proportion ci_lower ci_upper
+  <fct>         <int>      <dbl>    <dbl>    <dbl>
+1 H             19378      0.453    0.448    0.458
+2 D             10608      0.248    0.244    0.252
+3 A             12809      0.299    0.295    0.304
+# A tibble: 3 x 7
+  target_result sample_size mean_xi_diff median_xi_diff variance_xi_diff
+  <fct>               <int>        <dbl>          <dbl>            <dbl>
+1 H                   18883        11.6           11.5              759.
+2 D                   10323        -1.78          -1.70             694.
+3 A                   12490       -15.0          -15.6              748.
+# i 2 more variables: sd_xi_diff <dbl>, IQR_xi_diff <dbl>
+Levene's Test for Homogeneity of Variance (center = median)
+         Df F value    Pr(>F)    
+group     2    27.3 1.417e-12 ***
+      41693                      
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+	One-way analysis of means (not assuming equal variances)
+
+data:  xi_strength_diff and target_result
+F = 3577.4, num df = 2, denom df = 24500, p-value < 2.2e-16
+
+
+	Kruskal-Wallis rank sum test
+
+data:  xi_strength_diff by target_result
+Kruskal-Wallis chi-squared = 6028.5, df = 2, p-value < 2.2e-16
+
+
+XI Strength Difference Epsilon Squared: 0.1445853 
+
+	Pairwise comparisons using Wilcoxon rank sum test with continuity correction 
+
+data:  train_data$xi_strength_diff and train_data$target_result 
+
+  H      D     
+D <2e-16 -     
+A <2e-16 <2e-16
+
+P value adjustment method: holm 
+
+	Kruskal-Wallis rank sum test
+
+data:  ppg_diff by target_result
+Kruskal-Wallis chi-squared = 2621, df = 2, p-value < 2.2e-16
+
+PPG Difference Effect Size: 0.06305563 
+
+	Kruskal-Wallis rank sum test
+
+data:  win_rate_diff by target_result
+Kruskal-Wallis chi-squared = 2382.8, df = 2, p-value < 2.2e-16
+
+
+	Kruskal-Wallis rank sum test
+
+data:  form_goal_diff by target_result
+Kruskal-Wallis chi-squared = 3124.5, df = 2, p-value < 2.2e-16
+
+
+	Kruskal-Wallis rank sum test
+
+data:  home_attack_vs_away_defence by target_result
+Kruskal-Wallis chi-squared = 4744.1, df = 2, p-value < 2.2e-16
+
+
+	Kruskal-Wallis rank sum test
+
+data:  midfield_strength_diff by target_result
+Kruskal-Wallis chi-squared = 5329.4, df = 2, p-value < 2.2e-16
+
+
+	Kruskal-Wallis rank sum test
+
+data:  gk_strength_diff by target_result
+Kruskal-Wallis chi-squared = 2418.7, df = 2, p-value < 2.2e-16
+
+
+	Kruskal-Wallis rank sum test
+
+data:  continuity_diff by target_result
+Kruskal-Wallis chi-squared = 1.134, df = 2, p-value = 0.5672
+
+     
+         H    D    A
+  BE1 1638  868 1092
+  ES1 2692 1403 1605
+  FR1 2483 1519 1597
+  GB1 2594 1387 1719
+  IT1 2544 1446 1687
+  L1  2074 1124 1392
+  NL1 2117 1051 1348
+  PO1 1869 1034 1291
+  SC1 1367  776 1078
+
+	Pearson's Chi-squared test
+
+data:  league_outcome_table
+X-squared = 59.477, df = 16, p-value = 6.41e-07
+
+     
+             H         D         A
+  BE1 1629.210  891.8702 1076.9198
+  ES1 2581.016 1412.9127 1706.0708
+  FR1 2535.283 1387.8769 1675.8404
+  GB1 2581.016 1412.9127 1706.0708
+  IT1 2570.602 1407.2115 1699.1867
+  L1  2078.397 1137.7666 1373.8360
+  NL1 2044.890 1119.4235 1351.6870
+  PO1 1899.085 1039.6063 1255.3089
+  SC1 1458.501  798.4196  964.0797
+
+Cramer's V - League vs Outcome: 0.02636105 
+
+	Pearson's product-moment correlation
+
+data:  train_data$home_xi_strength and train_data$home_top3_strength
+t = 544.06, df = 41866, p-value < 2.2e-16
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ 0.9347975 0.9371716
+sample estimates:
+      cor 
+0.9359952 
+
+
+	Spearman's rank correlation rho
+
+data:  train_data$home_xi_strength and train_data$home_attack_strength
+S = 1.8098e+12, p-value < 2.2e-16
+alternative hypothesis: true rho is not equal to 0
+sample estimates:
+      rho 
+0.8507888 
+
+# A tibble: 10 x 8
+   analysis                                            n statistic     p_value
+   <chr>                                           <int>     <dbl>       <dbl>
+ 1 Welch ANOVA - XI Strength Difference            41696   3577.   0          
+ 2 Kruskal-Wallis - XI Strength Difference         41696   6028.   0          
+ 3 Kruskal-Wallis - PPG Difference                 41568   2621.   0          
+ 4 Kruskal-Wallis - Win Rate Difference            41568   2383.   0          
+ 5 Kruskal-Wallis - Form Goal Difference           41568   3124.   0          
+ 6 Kruskal-Wallis - Home Attack vs Away Defence    41861   4744.   0          
+ 7 Kruskal-Wallis - Midfield Strength Difference   42019   5329.   0          
+ 8 Kruskal-Wallis - Goalkeeper Strength Difference 41457   2419.   0          
+ 9 Kruskal-Wallis - Lineup Continuity Difference   37830      1.13 0.567      
+10 Chi-square - League vs Match Outcome            42795     59.5  0.000000641
+   p_adjusted_holm p_value_text p_adjusted_text significance                    
+             <dbl> <chr>        <chr>           <chr>                           
+ 1      0          < 2.2e-16    < 2.2e-16       Highly statistically significant
+ 2      0          < 2.2e-16    < 2.2e-16       Highly statistically significant
+ 3      0          < 2.2e-16    < 2.2e-16       Highly statistically significant
+ 4      0          < 2.2e-16    < 2.2e-16       Highly statistically significant
+ 5      0          < 2.2e-16    < 2.2e-16       Highly statistically significant
+ 6      0          < 2.2e-16    < 2.2e-16       Highly statistically significant
+ 7      0          < 2.2e-16    < 2.2e-16       Highly statistically significant
+ 8      0          < 2.2e-16    < 2.2e-16       Highly statistically significant
+ 9      0.567      5.67e-01     5.67e-01        Not statistically significant   
+10      0.00000128 6.41e-07     1.28e-06        Highly statistically significant
+# A tibble: 9 x 3
+  analysis                                  effect_size_type         effect_size
+  <chr>                                     <chr>                          <dbl>
+1 XI Strength Difference vs Outcome         Kruskal-Wallis epsilon ~   0.145    
+2 PPG Difference vs Outcome                 Kruskal-Wallis epsilon ~   0.0631   
+3 Win Rate Difference vs Outcome            Kruskal-Wallis epsilon ~   0.0573   
+4 Form Goal Difference vs Outcome           Kruskal-Wallis epsilon ~   0.0752   
+5 Home Attack vs Away Defence vs Outcome    Kruskal-Wallis epsilon ~   0.113    
+6 Midfield Strength Difference vs Outcome   Kruskal-Wallis epsilon ~   0.127    
+7 Goalkeeper Strength Difference vs Outcome Kruskal-Wallis epsilon ~   0.0583   
+8 Lineup Continuity Difference vs Outcome   Kruskal-Wallis epsilon ~   0.0000300
+9 League vs Outcome                         Cramer's V                 0.0264   
+
+==========================================
+STATISTICAL INFERENCE COMPLETE
+==========================================
+
+Important:
+A statistically significant result does NOT prove causation.
+If XI strength differs significantly among H/D/A, we say XI strength
+is ASSOCIATED with match outcome, not that a stronger XI causes the result.
+
+Because this dataset is large, p-values become extremely small.
+Always discuss the effect sizes and the actual group differences too.
+Matches are not fully independent (the same teams recur over time),
+so treat the p-values as descriptive evidence, not exact error rates.

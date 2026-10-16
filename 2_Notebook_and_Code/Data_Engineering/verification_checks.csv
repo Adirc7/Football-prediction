@@ -1,0 +1,15 @@
+check,status,detail
+"E1 Recent form recomputed (1,000 random team-matches)",PASS,1000 of 1000 identical
+E2 Stage 1 percentile recomputed (300 random starters),PASS,max difference 0.00e+00
+E2 Stage 2 percentile recomputed (300 random starters),PASS,max difference 0.00e+00
+E3 Stage 1 values dated strictly before the match,PASS,"536,298 values, all before the match day; oldest 730 days"
+E3 Stage 2 values dated strictly before the match,PASS,"830,296 values, all before the match day; oldest 730 days"
+E4 Target equals the result of the goals,PASS,"51,201 rows checked"
+E4 No duplicate matches,PASS,match_uid unique; no repeated date + teams + league
+E4 Strength values within 0-100,PASS,"12 columns, min 0.0, max 100.0"
+E4 Form window never larger than 5,PASS,max = 5
+E4 Primary has only the 9 leagues,PASS,9 leagues
+E4 Stage handover without overlap,PASS,2016-05-25 -> 2016-07-29
+"E5 Same 51,201 matches as the ML dataset",PASS,"rebuilt 51,201 vs ML file 51,201"
+"E5 Target, teams, dates, form and continuity identical to the ML dataset",PASS,"13 key columns, every row"
+E5 All columns agree with the ML dataset,PASS,45 of 61 columns identical in every row; largest mean difference 0.0120

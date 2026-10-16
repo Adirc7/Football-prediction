@@ -1,0 +1,11 @@
+analysis,n,statistic,p_value,p_adjusted_holm,p_value_text,p_adjusted_text,significance
+Welch ANOVA - XI Strength Difference,41696,3577.4481054695957,0,0,< 2.2e-16,< 2.2e-16,Highly statistically significant
+Kruskal-Wallis - XI Strength Difference,41696,6028.484975057024,0,0,< 2.2e-16,< 2.2e-16,Highly statistically significant
+Kruskal-Wallis - PPG Difference,41568,2621.033572831456,0,0,< 2.2e-16,< 2.2e-16,Highly statistically significant
+Kruskal-Wallis - Win Rate Difference,41568,2382.81362481376,0,0,< 2.2e-16,< 2.2e-16,Highly statistically significant
+Kruskal-Wallis - Form Goal Difference,41568,3124.4821620756165,0,0,< 2.2e-16,< 2.2e-16,Highly statistically significant
+Kruskal-Wallis - Home Attack vs Away Defence,41861,4744.105997253866,0,0,< 2.2e-16,< 2.2e-16,Highly statistically significant
+Kruskal-Wallis - Midfield Strength Difference,42019,5329.382597786214,0,0,< 2.2e-16,< 2.2e-16,Highly statistically significant
+Kruskal-Wallis - Goalkeeper Strength Difference,41457,2418.7022734618436,0,0,< 2.2e-16,< 2.2e-16,Highly statistically significant
+Kruskal-Wallis - Lineup Continuity Difference,37830,1.1340342488088677,0.5672148491272397,0.5672148491272397,5.67e-01,5.67e-01,Not statistically significant
+Chi-square - League vs Match Outcome,42795,59.47693316887221,6.409545341524933e-7,1.2819090683049865e-6,6.41e-07,1.28e-06,Highly statistically significant

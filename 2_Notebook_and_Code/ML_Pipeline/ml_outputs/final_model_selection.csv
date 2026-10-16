@@ -1,0 +1,11 @@
+,Frozen configuration
+Final Feature Set,FS3
+Final Model,RandomForest
+Hyperparameters,"{'max_depth': 6, 'min_samples_leaf': 5}"
+Class Weight,balanced
+Preprocessing,Numeric: median imputation; Categorical: most-frequent imputation + OneHotEncoder(handle_unknown='ignore'); all fitted on training data only
+Calibration,none (raw predict_proba)
+Training data,season_start <= 2022 only
+Selection Metric,Validation Macro-F1 (season_start == 2023)
+Validation Macro-F1,0.4916
+Random State,42

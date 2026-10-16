@@ -1,0 +1,8 @@
+group,n_columns,model_input
+"Identity (IDs, names, dates, league, source)",15,only league_code
+Recent form (last 5 matches),12,yes (FS1)
+"Starting-XI evidence (counts, coverage, value age)",8,counts and coverage (FS2)
+Player strength (0-100) and differences,19,"yes (FS2, FS3)"
+Formation and lineup continuity,4,"tested in FS4, not selected"
+Quality flag (player_feature_ready),1,no
+Outcome (two goal columns + target),3,never; target only

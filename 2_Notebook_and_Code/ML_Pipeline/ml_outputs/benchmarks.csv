@@ -1,0 +1,6 @@
+Benchmark,Period,Matches,Accuracy,Macro-F1,Draw predictions (%),Log loss
+Always predict home win (Dummy),Test 2024/25-2025/26,5604,0.4336188436830835,0.20164301717699776,0.0,
+Most common result for each tenth of the XI strength gap,Train 2008/09-2022/23,42795,0.5245706274097441,0.3821115683420975,0.0,
+Most common result for each tenth of the XI strength gap,Test 2024/25-2025/26,5604,0.5142755174875089,0.3787486110390446,0.0,
+Bet365 favourite (odds with margin removed),Stage 1 seasons 2008/09-2015/16,22592,0.5333746458923513,0.38917017610801263,0.141643059490085,0.9718683171568928
+Final Random Forest,Test 2024/25-2025/26,5604,0.4885795860099928,0.4727638684108305,,1.0084664945818762

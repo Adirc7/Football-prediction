@@ -1,0 +1,213 @@
+stage1_team_api_id,transfermarkt_club_id,supporting_fixtures,stage1_team_name,transfermarkt_club_name,name_similarity
+9925,371,138,Celtic,Celtic FC,1.0
+8634,131,137,FC Barcelona,FC Barcelona,1.0
+9847,583,136,Paris Saint-Germain,Paris Saint-Germain,1.0
+8315,621,135,Athletic Club de Bilbao,Athletic Bilbao,1.0
+8633,418,133,Real Madrid CF,Real Madrid,1.0
+9938,1519,133,Dundee United,Dundee United FC,1.0
+8066,2451,132,Inverness Caledonian Thistle,Inverness Caledonian Thistle FC,1.0
+9927,987,129,Motherwell,Motherwell FC,1.0
+8370,367,129,Rayo Vallecano,Rayo Vallecano,1.0
+10267,1049,129,Valencia CF,Valencia CF,1.0
+8560,681,129,Real Sociedad,Real Sociedad,1.0
+8302,368,128,Sevilla FC,Sevilla FC,1.0
+8305,3709,128,Getafe CF,Getafe CF,1.0
+8597,2553,127,Kilmarnock,Kilmarnock FC,1.0
+7878,16795,127,Granada CF,Granada CF,1.0
+9885,506,127,Juventus,Juventus FC,1.0
+9910,940,127,RC Celta de Vigo,Celta de Vigo,1.0
+9906,13,126,Atlético Madrid,Atlético de Madrid,1.0
+8485,370,126,Aberdeen,Aberdeen FC,1.0
+8558,714,125,RCD Espanyol,RCD Espanyol Barcelona,0.71
+9853,618,125,AS Saint-Étienne,AS Saint-Étienne,1.0
+8586,148,125,Tottenham Hotspur,Tottenham Hotspur,1.0
+9864,1084,125,Málaga CF,Málaga CF,1.0
+8649,2759,124,Ross County FC,Ross County FC,1.0
+8639,1082,123,LOSC Lille,LOSC Lille,1.0
+9851,273,122,Stade Rennais FC,Stade Rennais FC,1.0
+8467,2578,122,St. Johnstone FC,St. Johnstone FC,1.0
+9748,1041,122,Olympique Lyonnais,Olympique Lyon,0.867
+10229,1090,121,AZ,AZ Alkmaar,0.364
+8581,3368,120,Levante UD,Levante UD,1.0
+8592,244,120,Olympique de Marseille,Olympique Marseille,1.0
+8456,281,120,Manchester City,Manchester City,1.0
+9908,200,120,FC Utrecht,FC Utrecht,1.0
+10228,306,120,SC Heerenveen,SC Heerenveen,1.0
+10235,234,119,Feyenoord,Feyenoord Rotterdam,0.667
+10252,405,119,Aston Villa,Aston Villa,1.0
+9791,1304,118,Heracles Almelo,Heracles Almelo,1.0
+9825,11,118,Arsenal,Arsenal FC,1.0
+8564,5,118,Milan,AC Milan,1.0
+8466,180,118,Southampton,Southampton FC,1.0
+10264,1075,117,SC Braga,SC Braga,1.0
+10217,1268,117,ADO Den Haag,ADO Den Haag,1.0
+9875,6195,117,Napoli,SSC Napoli,0.8
+8650,31,117,Liverpool,Liverpool FC,1.0
+8277,499,117,Vitesse,Vitesse Arnhem,0.7
+9831,417,117,OGC Nice,OGC Nice,1.0
+9827,40,116,Girondins de Bordeaux,FC Girondins Bordeaux,1.0
+9790,41,116,Hamburger SV,Hamburger SV,1.0
+8689,1158,116,FC Lorient,FC Lorient,1.0
+8535,430,116,Fiorentina,ACF Fiorentina,0.87
+8686,12,115,Roma,Associazione Sportiva Roma,0.286
+10003,2288,115,Swansea City,Swansea City,1.0
+9772,294,115,SL Benfica,SL Benfica,1.0
+10260,985,115,Manchester United,Manchester United,1.0
+10215,2990,115,Académica de Coimbra,Académica Coimbra,1.0
+8611,317,115,FC Twente,FC Twente Enschede,0.6
+8455,631,115,Chelsea,Chelsea FC,1.0
+8640,383,115,PSV,PSV Eindhoven,0.4
+8654,379,114,West Ham United,West Ham United,1.0
+9789,16,114,Borussia Dortmund,Borussia Dortmund,1.0
+8659,984,114,West Bromwich Albion,West Bromwich Albion,1.0
+8543,398,114,Lazio,Società Sportiva Lazio S.p.A.,0.357
+8406,167,113,FC Augsburg,FC Augsburg,1.0
+7794,595,113,SC Bastia,SC Bastia,1.0
+10249,969,113,Montpellier Hérault SC,Montpellier HSC,0.75
+9837,1421,113,Stade de Reims,Stade Reims,1.0
+8226,533,113,TSG 1899 Hoffenheim,TSG 1899 Hoffenheim,1.0
+9882,1038,113,Sampdoria,UC Sampdoria,0.9
+8533,862,112,Chievo Verona,Chievo Verona,1.0
+7842,1465,112,Estoril Praia,GD Estoril Praia,0.923
+8593,610,112,Ajax,Ajax Amsterdam,0.471
+6413,1269,112,PEC Zwolle,PEC Zwolle,1.0
+7844,2420,112,Vitória Guimarães,Vitória Guimarães SC,1.0
+9804,416,111,Torino,Torino FC,1.0
+9773,720,111,FC Porto,FC Porto,1.0
+8472,289,110,Sunderland,Sunderland AFC,0.87
+9941,415,110,Toulouse FC,FC Toulouse,1.0
+9904,42,110,Hannover 96,Hannover 96,1.0
+8697,86,110,SV Werder Bremen,SV Werder Bremen,1.0
+9768,336,110,Sporting CP,Sporting CP,1.0
+6403,2995,109,FC Paços de Ferreira,FC Paços de Ferreira,1.0
+9810,24,109,Eintracht Frankfurt,Eintracht Frankfurt,1.0
+10189,33,109,FC Schalke 04,FC Schalke 04,1.0
+10261,762,109,Newcastle United,Newcastle United,1.0
+9905,39,109,1. FSV Mainz 05,1.FSV Mainz 05,0.952
+9788,18,108,Borussia Mönchengladbach,Borussia Mönchengladbach,1.0
+10233,252,108,Genoa,Genoa CFC,0.769
+8674,202,108,FC Groningen,FC Groningen,1.0
+10214,982,108,CD Nacional,CD Nacional,1.0
+8668,29,108,Everton,Everton FC,1.0
+8600,410,107,Udinese,Udinese Calcio,0.7
+10212,1301,107,CS Marítimo,CS Marítimo,1.0
+10238,1085,107,Vitória Setúbal,Vitória Setúbal FC,1.0
+9823,27,107,FC Bayern Munich,Bayern Munich,1.0
+10269,79,106,VfB Stuttgart,VfB Stuttgart,1.0
+10194,512,104,Stoke City,Stoke City,1.0
+8426,2760,104,Partick Thistle F.C.,Partick Thistle FC,0.933
+8636,46,102,Inter,Inter Milan,0.667
+8721,82,102,VfL Wolfsburg,VfL Wolfsburg,1.0
+9860,43,102,Heart of Midlothian,Heart of Midlothian FC,1.0
+8524,800,101,Atalanta,Atalanta BC,0.889
+8178,15,100,Bayer 04 Leverkusen,Bayer 04 Leverkusen,1.0
+9800,465,99,St. Mirren,St. Mirren FC,1.0
+9783,897,99,RC Deportivo de La Coruña,Deportivo de La Coruña,1.0
+8284,511,98,Dundee FC,Dundee FC,1.0
+8603,150,97,Real Betis Balompié,Real Betis Balompié,1.0
+7841,2425,97,Rio Ave FC,Rio Ave FC,1.0
+9829,162,93,AS Monaco,AS Monaco,1.0
+10205,1050,93,Villarreal CF,Villarreal CF,1.0
+8464,467,90,N.E.C.,NEC Nijmegen,0.429
+7788,133,89,SC Cambuur,SC Cambuur Leeuwarden,0.583
+8525,403,89,Willem II,Willem II Tilburg,0.696
+9803,192,87,Roda JC Kerkrade,Roda JC Kerkrade,1.0
+9761,132,87,NAC Breda,NAC Breda,1.0
+9857,1025,86,Bologna,Bologna Football Club 1909,0.538
+9876,276,86,Hellas Verona,Hellas Verona,1.0
+9807,68608,85,CF Os Belenenses,CF Os Belenenses,1.0
+9826,873,84,Crystal Palace,Crystal Palace,1.0
+4087,14171,84,Évian Thonon Gaillard FC,Thonon Évian Grand Genève FC,0.439
+9830,995,83,FC Nantes,FC Nantes,1.0
+9747,855,82,En Avant de Guingamp,EA Guingamp,0.8
+8348,979,82,Moreirense FC,Moreirense FC,1.0
+8540,458,81,Palermo,Palermo FC,1.0
+158085,8024,81,FC Arouca,FC Arouca,1.0
+10167,130,80,Parma,Parma Calcio 1913,0.5
+10000,3508,80,SV Zulte-Waregem,Zulte Waregem,1.0
+7943,6574,80,Sassuolo,US Sassuolo,0.889
+8342,2282,80,Club Brugge KV,Club Brugge KV,1.0
+8177,44,79,Hertha BSC Berlin,Hertha BSC,0.75
+8529,1390,79,Cagliari,Cagliari Calcio,0.727
+9850,1123,78,Norwich City,Norwich City,1.0
+9985,3057,77,Standard de Liège,Standard Liège,1.0
+8635,58,77,RSC Anderlecht,RSC Anderlecht,1.0
+9987,1184,76,KRC Genk,KRC Genk,1.0
+8203,354,76,KV Mechelen,KV Mechelen,1.0
+8358,60,75,SC Freiburg,SC Freiburg,1.0
+9986,172,74,Sporting Charleroi,Royal Charleroi Sporting Club,0.783
+8571,601,73,KV Kortrijk,KV Kortrijk,1.0
+9994,498,73,Sporting Lokeren,KSC Lokeren (- 2020),0.778
+9764,2424,73,Gil Vicente FC,Gil Vicente FC,1.0
+8475,28643,72,Waasland-Beveren,SK Beveren,0.636
+9991,157,70,KAA Gent,KAA Gent,1.0
+10281,366,67,Real Valladolid,Real Valladolid CF,1.0
+10268,1531,66,Elche CF,Elche CF,1.0
+9865,3302,65,UD Almería,UD Almería,1.0
+8372,1533,63,SD Eibar,SD Eibar,1.0
+6433,1435,62,Go Ahead Eagles,Go Ahead Eagles,1.0
+8429,2999,62,Hamilton Academical FC,Hamilton Academical FC,1.0
+10251,903,62,Hibernian,Hibernian FC,1.0
+10218,798,62,Excelsior,Excelsior Rotterdam,0.667
+9879,931,62,Fulham,Fulham FC,1.0
+8371,331,60,CA Osasuna,CA Osasuna,1.0
+8530,1627,59,Catania,Catania FC,1.0
+8534,749,58,Empoli,FC Empoli,1.0
+7819,1162,58,SM Caen,SM Caen,1.0
+8722,3,57,1. FC Köln,1.FC Köln,0.889
+8576,1147,57,AC Ajaccio,AC Ajaccio,1.0
+8613,2503,57,Boavista FC,Boavista FC,1.0
+8197,1003,57,Leicester City,Leicester City,1.0
+8165,4,56,1. FC Nürnberg,1.FC Nuremberg,0.778
+10242,1095,56,ES Troyes AC,ESTAC Troyes,0.842
+9873,1423,54,Valenciennes FC,Valenciennes FC,1.0
+10219,235,53,RKC Waalwijk,RKC Waalwijk,1.0
+9984,520,53,KSV Cercle Brugge,Cercle Brugge,0.889
+8573,2861,53,KV Oostende,KV Oostende,1.0
+9874,750,51,FC Sochaux-Montbéliard,FC Sochaux-Montbéliard,1.0
+10001,968,50,KVC Westerlo,KVC Westerlo,1.0
+274581,29228,50,Royal Excel Mouscron,Royal Excel Mouscron (-2022),0.9
+8667,3008,50,Hull City,Hull City,1.0
+2033,4750,49,S.C. Olhanense,SC Olhanense,0.9
+10172,1039,49,Queens Park Rangers,Queens Park Rangers,1.0
+1773,2727,47,Oud-Heverlee Leuven,Oud-Heverlee Leuven,1.0
+9989,204,43,Lierse SK,Lierse SK (- 2018),0.75
+8537,1210,34,Livorno,US Livorno 1915,0.7
+9817,1010,32,Watford,Watford FC,1.0
+9869,2448,32,Real Sporting de Gijón,Sporting Gijón,0.714
+8661,237,32,RCD Mallorca,RCD Mallorca,1.0
+8306,472,32,UD Las Palmas,UD Las Palmas,1.0
+8121,1420,31,Angers SCO,Angers SCO,1.0
+8528,1071,31,Wigan Athletic,Wigan Athletic,1.0
+9891,8970,31,Frosinone,Frosinone Calcio,0.75
+7869,993,30,Córdoba CF,Córdoba CF,1.0
+6631,1455,30,FC Dordrecht,FC Dordrecht,1.0
+6547,3327,30,FC Penafiel,FC Penafiel,1.0
+9798,1032,30,Reading,Reading FC,1.0
+8678,989,30,Bournemouth,AFC Bournemouth,0.88
+8521,3911,30,Stade Brestois 29,Stade Brestois 29,1.0
+8588,826,30,RC Lens,RC Lens,1.0
+8481,1159,30,AS Nancy-Lorraine,AS Nancy-Lorraine,1.0
+8194,38,29,Fortuna Düsseldorf,Fortuna Düsseldorf,1.0
+8551,1387,29,Siena,Siena FC,1.0
+6391,3558,29,GFC Ajaccio,GFC Ajaccio,1.0
+6367,976,29,Uniao da Madeira,CF União Madeira (-2021),0.8
+8262,105,29,SV Darmstadt 98,SV Darmstadt 98,1.0
+9880,1429,29,Cesena,Cesena FC,1.0
+9878,2921,29,Pescara,Delfino Pescara 1936,0.56
+188163,7179,28,Tondela,CD Tondela,1.0
+8526,642,28,De Graafschap,De Graafschap Doetinchem,0.667
+8394,142,28,Real Zaragoza,Real Zaragoza,1.0
+8550,347,28,FC Metz,FC Metz,1.0
+8460,127,28,SC Paderborn 07,SC Paderborn 07,1.0
+8357,65,28,SpVgg Greuther Fürth,SpVgg Greuther Fürth,1.0
+9776,23,27,Eintracht Braunschweig,Eintracht Braunschweig,1.0
+8234,4795,26,FC Ingolstadt 04,FC Ingolstadt 04,1.0
+208931,4102,26,Carpi,AC Carpi,1.0
+8344,603,26,Cardiff City,Cardiff City,1.0
+9997,475,26,Sint-Truidense VV,Sint-Truidense VV,1.0
+8191,1132,24,Burnley,Burnley FC,1.0
+10211,1436,24,SC Beira Mar,SC Beira-Mar,1.0
+9998,1411,24,RAEC Mons,RAEC Mons (- 2015),0.8
+9839,1426,23,VVV-Venlo,VVV-Venlo,1.0
+9993,566,22,Beerschot AC,Beerschot AC,1.0
